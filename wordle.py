@@ -104,8 +104,8 @@ def wordle():
                 print("\nYou won in", attempts, "guesses!")
                 break
             if attempts == 6:
-                print("\nYou lost.")
-
+                print("\nYou lost.", "The word was:", selected_word)
+                    
         replay_response = input("\nPlay again? ") #replay mechanism
         if replay_response.lower() == "yes" or replay_response.lower() == "y":
             replay = True
