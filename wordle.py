@@ -50,7 +50,6 @@ def wordle():
         with open("word_list") as word_list: #this generates a selected_word
             selected_word = word_list.readlines()
             selected_word = selected_word[i].strip()
-        print(selected_word)
 
         attempts = 0
         guess_num = [""] * 6
